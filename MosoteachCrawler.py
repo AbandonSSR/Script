@@ -115,4 +115,5 @@ if __name__ == '__main__':
         else:
             print("输入的索引无效，请重新输入")
     # 下载选择的资源
-    download_res(json.loads(res[select_index]))
+    download_res(json.loads(res[select_index - 1]))
+    print("已下载完成")
